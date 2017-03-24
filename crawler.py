@@ -28,7 +28,7 @@ while len(new_urls):
     new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
     emails.update(new_emails)
     print(new_emails)
-    emails_file = open('/Users/Aalap/Desktop/emails.txt', "a")
+    emails_file = open('*file path on local system*', "a")
     for e in new_emails:
         emails_file.writelines(e)
         emails_file.write('\n')
